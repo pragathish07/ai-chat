@@ -17,7 +17,7 @@ def format_prompt(message, custom_instructions=None):
     prompt += f" [INST] {message} [/INST]"
     return prompt
 
-def generate(prompt, temperature=0.9, max_new_tokens=512, top_p=0.95, repetition_penalty=1.0):
+def generate(prompt, temperature=0.5, max_new_tokens=512, top_p=0.95, repetition_penalty=1.0):
     temperature = float(temperature)
     if temperature < 1e-2:
         temperature = 1e-2

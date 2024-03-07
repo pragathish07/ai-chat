@@ -13,6 +13,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -79,7 +80,7 @@
         .bot-message {
             background-color: #007bff;
             color: white;
-            text-align: right;
+            text-align: left;
             width: fit-content;
         }
 
@@ -93,7 +94,7 @@
     <h1>Text Generation App</h1>
     <form id="generateForm">
         <label for="user_prompt">User Input:</label>
-        <input type="text" id="user_prompt" name="user_prompt" required>
+        <input type="text" id="user_prompt" name="user_prompt" required >
         <button type="button" onclick="generateText()">Generate</button>
     </form>
     <div id="output"></div>
